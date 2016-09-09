@@ -45,7 +45,7 @@
 
 // Absolute path to the WordPress directory
 if (!defined('ABSPATH')) {
-    define('ABSPATH', dirname(__FILE__) . '/base/');
+    define('ABSPATH', dirname(__FILE__) . '/core/');
 }
 
 // Try environment variable 'WP_ENV'
@@ -96,7 +96,7 @@ include dirname(__FILE__) . '/wp-config.' . WP_ENV . '.php';
 
 // Define Site URL: WordPress in a subdirectory.
 if (!defined('WP_SITEURL')) {
-    define('WP_SITEURL', $protocol . $hostname . '/base');
+    define('WP_SITEURL', $protocol . $hostname . '/core');
 }
 if (!defined('WP_HOME')) {
     define('WP_HOME', $protocol . $hostname);
@@ -111,10 +111,13 @@ defined( 'WP_CONTENT_URL' )  or define( 'WP_CONTENT_URL', WP_HOME . '/content' )
 defined( 'WPMU_PLUGIN_DIR' ) or define( 'WPMU_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins-mu' );
 defined( 'WPMU_PLUGIN_URL' ) or define( 'WPMU_PLUGIN_URL', WP_CONTENT_URL . '/plugins-mu' );
 
+define( 'UPLOADS', '../media' );
+
 // Define W3 Total Cache hostname
 if (defined('WP_CACHE')) {
     define('COOKIE_DOMAIN', $hostname);
 }
+
 
 // Clean up
 unset($hostname, $protocol);
