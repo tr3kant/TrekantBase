@@ -26,10 +26,10 @@ content/backup-db/
 content/backups/
 content/blogs.dir/
 content/cache/
+content/plugins/
 content/upgrade/
 content/uploads/
 content/wp-cache-config.php
-content/plugins/hello.php
 
 # Sitemap
 /.htaccess
