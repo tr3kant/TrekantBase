@@ -1,6 +1,6 @@
-[submodule "base"]
-	path = base
-	url = git://core.git.wordpress.org/
 [submodule "content/themes/skrive"]
 	path = content/themes/skrive
 	url = git@trekantr:trekantr/skrive.git
+[submodule "core"]
+	path = core
+	url = git://core.git.wordpress.org/
