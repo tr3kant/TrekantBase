@@ -111,8 +111,6 @@ defined( 'WP_CONTENT_URL' )  or define( 'WP_CONTENT_URL', WP_HOME . '/content' )
 defined( 'WPMU_PLUGIN_DIR' ) or define( 'WPMU_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins-mu' );
 defined( 'WPMU_PLUGIN_URL' ) or define( 'WPMU_PLUGIN_URL', WP_CONTENT_URL . '/plugins-mu' );
 
-define( 'UPLOADS', '../media' );
-
 // Define W3 Total Cache hostname
 if (defined('WP_CACHE')) {
     define('COOKIE_DOMAIN', $hostname);
